@@ -1,0 +1,13 @@
+.Titulo{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.row h4{
+    transform: translate(-10px);
+    color: #0c2a6c;
+}
+
+.btnRegistrar{
+    margin-right: 15px;
+}

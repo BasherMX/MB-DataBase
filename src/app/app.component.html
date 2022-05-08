@@ -1,0 +1,42 @@
+<nav class="navbar navbar-light" style="background-color: #0c2a6c; max-height: 60px; min-height: 60px;">
+  <div class="container-fluid">
+    <a class="navbar-brand logo" [routerLink]="['/home']" >
+      MB
+      <!-- <img src="../assets/Logo.png" alt="" width="40" height="40" class="d-inline-block align-text-top"> -->
+    </a>
+    <div class="reloj"></div>
+  </div>
+</nav>
+
+<div class="contenedor">
+  <div class="barra_lateral">
+    <div class="arriba">
+      <a class="barra_item" [routerLink]="['/registrar']">
+        <i class="fa-solid fa-plus"></i>
+        <p>Registrar</p>
+      </a>
+  
+      <a class="barra_item" [routerLink]="['/listaRegistros']">
+        <i class="fa-solid fa-list-ul" ></i>
+        <p>Registros</p>
+      </a>
+    </div>
+
+    <a class="barra_item cerrarSesion">
+      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+      <p>Cerrar sesion</p>
+    </a>
+
+
+
+
+  </div>
+
+  <div class="contenido">
+    <router-outlet></router-outlet>
+  </div>
+  
+  <footer class="footer">@2020 - Basher</footer>
+</div>
+
+

@@ -1,0 +1,28 @@
+.centrar{
+    width: 90%;
+    margin: auto;
+}
+
+.table{
+    margin: 0 auto;
+    height: max-content;
+}
+
+.table td{
+    font-size: .95rem;
+    height: 40px;
+}
+
+.table tr, .table td, .table th{
+    max-height: 40px;
+    height: 40px;
+}
+
+.tabla{
+    max-height: 60vh;
+    height: 60vh;
+}
+
+.filtros{
+    transform: scale(.9);
+}

@@ -1,0 +1,75 @@
+ <!-- componente formulario -->
+ <h2 class="text-center mt-3 Titulo">Registrar Datos</h2>
+
+ <div id="formulario" class="container" style="max-width: 77%;">
+    <form class="row g-3"  #formularioRegistro="ngForm" (ngSubmit)="formularioEnviado()">
+        <div class="row mb-3">
+            <h4 class="mt-4">Datos Electorales</h4>
+            <div class="col-md-4">
+                <label for="inputForDistrito" class="form-label">Distrito</label>
+                <input id="inputForDistrito" name="inputForDistrito" [(ngModel)]="RegistrarPersona.distrito" type="number" class="form-control" placeholder="Distrito" value="">
+            </div>
+            <div class="col-md-4">
+                <label for="inputForSeccion" class="form-label">Seccion</label>
+                <input id="inputForSeccion" name="inputForSeccion" [(ngModel)]="RegistrarPersona.seccion" type="number" class="form-control" placeholder="Seccion" value="">
+            </div>
+            <div class="col-md-4">
+                <label for="inputForManzana" class="form-label">Manzana</label>
+                <input id="inputForManzana" name="inputForManzana" [(ngModel)]="RegistrarPersona.manzana" type="number" class="form-control" placeholder="Manzana" value="">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <h4 class="mt-2">Datos Personales</h4>
+            <div class="col-md-4">
+                <label for="inputForap_pat" class="form-label">Apellido Paterno</label>
+                <input id="inputForap_pat" name="inputForap_pat" [(ngModel)]="RegistrarPersona.ap_pat" type="text" class="form-control" placeholder="Apellido Paterno" value="">
+            </div>
+            <div class="col-md-4">
+                <label for="inputForap_mat" class="form-label">Apellido Materno</label>
+                <input id="inputForap_mat" name="inputForap_mat" [(ngModel)]="RegistrarPersona.ap_mat" type="text" class="form-control" placeholder="Apellido Materno" value="">
+            </div>
+            <div class="col-md-4">
+                <label for="inputFornombres" class="form-label">Nombre(s)</label>
+                <input id="inputFornombres" name="inputFornombres" [(ngModel)]="RegistrarPersona.nombres" type="text" class="form-control" placeholder="Nombre(s)" value="">
+            </div>
+            <div class="col-md-4 mt-2">
+                <label for="inputForcalle" class="form-label">Calle</label>
+                <input id="inputForcalle" name="inputForcalle" [(ngModel)]="RegistrarPersona.calle" type="text" class="form-control" placeholder="Domicilio" value="">
+            </div>
+            <div class="col-md-4 mt-2">
+                <label for="inputForcolonia" class="form-label">Colonia</label>
+                <input id="inputForcolonia" name="inputForcolonia" [(ngModel)]="RegistrarPersona.colonia" type="text" class="form-control" placeholder="Colonia" value="">
+            </div>
+            <div class="col-md-2 mt-2">
+                <label for="inputForn_exterior" class="form-label">Numero exterior</label>
+                <input id="inputForn_exterior" name="inputForn_exterior" [(ngModel)]="RegistrarPersona.n_exterior" type="text" class="form-control" placeholder="N. exterior" value="">
+            </div>
+            <div class="col-md-2 mt-2">
+                <label for="inputForn_interior" class="form-label">Numero interior</label>
+                <input id="inputForn_interior" name="inputForn_interior" [(ngModel)]="RegistrarPersona.n_interior" type="text" class="form-control" placeholder="N. interior" value="">
+            </div>
+            <div class="col-md-4 mt-2">
+                <label for="inputFortelefono" class="form-label">Telefono</label>
+                <input id="inputFortelefono" name="inputFortelefono" [(ngModel)]="RegistrarPersona.telefono" type="text" class="form-control" placeholder="Telefono" value="">
+            </div>
+            <div class="col-md-4 mt-2">
+                <label for="inputForredes" class="form-label">Correo/Facebook</label>
+                <input id="inputForredes" name="inputForredes" [(ngModel)]="RegistrarPersona.redes" type="text" class="form-control" placeholder="Correo/Facebook" value="">
+            </div>
+            <div class="col-md-4 mt-2">
+                <label for="inputEmail4" class="form-label">Auditoria</label>
+                <input id="inputForauditoria" name="inputForauditoria" [(ngModel)]="RegistrarPersona.auditoria" type="text" class="form-control" placeholder="Auditoria" value="">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary btnRegistrar">Registrar</button>
+                <button type="button" class="btn btn-secondary">Cancelar</button>
+              </div>
+        </div>
+        
+    </form>
+
+  </div>
