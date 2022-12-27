@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { Persona } from '../app.module';
+import { Persona } from 'src/app/app.module';
 
 @Component({
-  selector: 'app-listar-registros',
-  templateUrl: './listar-registros.component.html',
-  styleUrls: ['./listar-registros.component.css']
+  selector: 'app-fechas-importantes',
+  templateUrl: './fechas-importantes.component.html',
+  styleUrls: ['./fechas-importantes.component.css']
 })
-export class ListarRegistrosComponent implements OnInit {
+export class FechasImportantesComponent implements OnInit {
+
   ArrayPersonasLocal: Persona[];
 
   //persona: Persona;

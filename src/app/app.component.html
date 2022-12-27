@@ -20,23 +20,39 @@
         <i class="fa-solid fa-list-ul" ></i>
         <p>Registros</p>
       </a>
+      
+      <a class="barra_item" [routerLink]="['/fechasImportantes']">
+        <i class="fa-solid fa-calendar"></i>
+        <p>Fechas</p>
+      </a>
+
+
+
+
+
+
+
+
+
+
+
     </div>
 
+
+    <!-- Abajo -->
     <a class="barra_item cerrarSesion">
       <i class="fa-solid fa-arrow-right-from-bracket"></i>
       <p>Cerrar sesion</p>
     </a>
-
-
-
-
   </div>
 
   <div class="contenido">
     <router-outlet></router-outlet>
   </div>
   
-  <footer class="footer">@2020 - Basher</footer>
+  <footer class="footer">
+    <a href="https://www.facebook.com/narb.basher/" target="_blank">@2020 - Basher</a>
+  </footer>
 </div>
 
 

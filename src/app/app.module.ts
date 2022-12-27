@@ -7,13 +7,19 @@ import { AppComponent } from './app.component';
 import { RegistrarComponent } from './registrar/registrar.component';
 import { ListarRegistrosComponent } from './listar-registros/listar-registros.component';
 import { HomeComponent } from './home/home.component';
+import { FechasImportantesComponent } from './Fechas-Importantees/fechas-importantes/fechas-importantes.component';
+import { FechasImportantesNewComponent } from './Fechas-Importantees/fechas-importantes-new/fechas-importantes-new.component';
+import { FechasImportantesEditComponent } from './Fechas-Importantees/fechas-importantes-edit/fechas-importantes-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistrarComponent,
     ListarRegistrosComponent,
-    HomeComponent
+    HomeComponent,
+    FechasImportantesComponent,
+    FechasImportantesNewComponent,
+    FechasImportantesEditComponent,
   ],
   imports: [
     BrowserModule,

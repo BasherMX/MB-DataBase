@@ -1,0 +1,43 @@
+.centrar{
+    width: 90%;
+    margin: auto;
+}
+
+.table{
+    margin: 0 auto;
+    height: max-content;
+    text-align: center;
+}
+
+.table td{
+    font-size: 1.1rem;
+    height: 40px;
+}
+
+/* .table td:nth-child(1){
+    padding-left: 2rem;
+} */
+
+.table tr, .table td, .table th{
+    max-height: 40px;
+    height: 40px;
+}
+
+.tabla{
+    max-height: 60vh;
+    height: 60vh;
+}
+
+.fa-trash{
+    margin-left: 1rem;
+}
+
+.fa-pencil:hover{
+    color: green;
+    cursor: pointer;
+}
+
+.fa-trash:hover{
+    color: red;
+    cursor: pointer;
+}

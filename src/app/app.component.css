@@ -1,3 +1,5 @@
+
+
 .contenedor{
     width: 100%;
     height: calc(100vh - 90px);
@@ -37,6 +39,7 @@
 a{
     text-decoration: none;
     transition: all .2s ease;
+    
 }
 
 .arriba{
@@ -96,13 +99,23 @@ a{
     transform: translate(-20px);
 }
 
+.footer a{
+    color: rgb(24, 24, 24);
+}
+
 .navbar-brand{
     color: white;
     padding: 0 0 0 30px;
     font-size: 30px;
 }
 
+.logo{
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
 .logo:hover{
     transform: scale(1.1);
     color: white;
 }
+
