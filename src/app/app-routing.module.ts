@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FechasImportantesNewComponent } from './Fechas-Importantees/fechas-importantes-new/fechas-importantes-new.component';
 import { FechasImportantesComponent } from './Fechas-Importantees/fechas-importantes/fechas-importantes.component';
 import { HomeComponent } from './home/home.component';
 import { ListarRegistrosComponent } from './listar-registros/listar-registros.component';
@@ -10,6 +11,7 @@ const routes: Routes = [
   {path: 'registrar', component: RegistrarComponent},
   {path: 'listaRegistros', component: ListarRegistrosComponent},
   {path: 'fechasImportantes', component: FechasImportantesComponent},
+  {path: 'fechasImportantes-new', component: FechasImportantesNewComponent},
   {path: '**', pathMatch: 'full', redirectTo:'home'}
 ];
 

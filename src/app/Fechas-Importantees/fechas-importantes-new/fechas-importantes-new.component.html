@@ -1,1 +1,48 @@
-<p>fechas-importantes-new works!</p>
+ <!-- componente formulario -->
+ <h2 class="text-center mt-3 Titulo">Registrar Fecha Importante</h2>
+
+ <div id="formulario" class="container mt-5" style="max-width: 77%;">
+
+    <form class="row g-3"  #formularioRegistro="ngForm" (ngSubmit)="formularioEnviado()">
+        <div class="row mb-3">
+            <div class="col-md-12 mb-4">
+                <label for="inpCelebrationName" class="form-label">Nombre de la celebracion:</label>
+                <input id="inpCelebrationName" name="inpCelebrationName" [(ngModel)]="RegistrarFecha.celebracion" type="text" class="form-control" placeholder="celebracion">
+            </div>
+
+            <div class="col-md-6">
+                <label for="inpCelebrationDay" class="form-label">Ingresa el Dia</label>
+                <input id="inpCelebrationDay" name="inpCelebrationDay" [(ngModel)]="RegistrarFecha.dia" type="number" class="form-control" placeholder="Dia">
+            </div>
+            <div class="col-md-6">
+                <label for="inpCelebrationMonth" class="form-label">Mes:</label>
+                    <select id="inpCelebrationMonth" name="inpCelebrationMonth" class="form-control" [(ngModel)]="RegistrarFecha.mes">
+                        <option value="Enero">Enero</option>
+                        <option value="Febrero">Febrero</option>
+                        <option value="Marzo">Marzo</option>
+                        <option value="Abril">Abril</option>
+                        <option value="Mayo">Mayo</option>
+                        <option value="Junio">Junio</option>
+                        <option value="Julio">Julio</option>
+                        <option value="Agosto">Agosto</option>
+                        <option value="Septiembre">Septiembre</option>
+                        <option value="Octubre">Octubre</option>
+                        <option value="Noviembre">Noviembre</option>
+                        <option value="Diciembre">Diciembre</option>
+                    </select>
+            </div>
+        </div>
+
+        
+
+        <div class="row mb-3 mt-4">
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary btnRegistrar">Registrar</button>
+                <button type="button" class="btn btn-secondary btnRegistrar">Cancelar</button>
+                <button type="button" class="btn btn-secondary" [routerLink]="['/fechasImportantes']">Regresar</button>
+              </div>
+        </div>
+        
+    </form>
+
+  </div>

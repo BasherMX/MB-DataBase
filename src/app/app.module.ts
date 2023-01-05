@@ -48,3 +48,11 @@ export class Persona {
         public auditoria:string
     ) { }
 }
+
+export class FechaImportante {
+  constructor(
+        public celebracion: string,
+        public dia: number,
+        public mes:number
+    ) { }
+}
