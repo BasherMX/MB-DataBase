@@ -19,9 +19,11 @@ export class FechasImportantesNewComponent implements OnInit {
     
     //inicializa 1 persona
     this.RegistrarFecha = {
-      celebracion: "" ,
+      id:0,
+      celebracion: "",
       dia: 0,
-      mes:0
+      mes:"",
+      tipo:"Elegir..."
     }
   }
 
@@ -30,7 +32,7 @@ export class FechasImportantesNewComponent implements OnInit {
 
 
   formularioEnviado() {
-    if ( this.RegistrarFecha.celebracion !=  "" || this.RegistrarFecha.dia !=  0 || this.RegistrarFecha.mes != 0 ){
+    if ( this.RegistrarFecha.celebracion !=  "" || this.RegistrarFecha.dia !=  0 || this.RegistrarFecha.mes != "" ){
 
       //nuevo registro
       Swal.fire({
@@ -40,6 +42,7 @@ export class FechasImportantesNewComponent implements OnInit {
         timerProgressBar: true,
         timer: 1200,
       });
+      this.RegistrarFecha.celebracion =this.RegistrarFecha.celebracion.toUpperCase();
 
       this.ArrayFechasImportantes.push(this.RegistrarFecha); //agrega al array
 
@@ -67,9 +70,11 @@ export class FechasImportantesNewComponent implements OnInit {
   reiniciarFormulario() {
     //limpiar el formulario
     this.RegistrarFecha={
+      id:0,
       celebracion: "",
       dia: 0,
-      mes:0,
+      mes:"",
+      tipo:"Elegir..."
     }
   }
 

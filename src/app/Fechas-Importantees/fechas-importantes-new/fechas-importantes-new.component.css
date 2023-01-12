@@ -11,3 +11,14 @@
 .btnRegistrar{
     margin-right: 15px;
 }
+
+.inp{
+    position: relative;
+}
+
+.fa-caret-down{
+    position: absolute;
+    top: calc(50% + 8px);
+    right: 30px;
+    pointer-events: none;
+}

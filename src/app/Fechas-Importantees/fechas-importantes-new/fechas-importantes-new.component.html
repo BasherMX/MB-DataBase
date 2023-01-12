@@ -10,11 +10,11 @@
                 <input id="inpCelebrationName" name="inpCelebrationName" [(ngModel)]="RegistrarFecha.celebracion" type="text" class="form-control" placeholder="celebracion">
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <label for="inpCelebrationDay" class="form-label">Ingresa el Dia</label>
                 <input id="inpCelebrationDay" name="inpCelebrationDay" [(ngModel)]="RegistrarFecha.dia" type="number" class="form-control" placeholder="Dia">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4 inp">
                 <label for="inpCelebrationMonth" class="form-label">Mes:</label>
                     <select id="inpCelebrationMonth" name="inpCelebrationMonth" class="form-control" [(ngModel)]="RegistrarFecha.mes">
                         <option value="Enero">Enero</option>
@@ -30,8 +30,20 @@
                         <option value="Noviembre">Noviembre</option>
                         <option value="Diciembre">Diciembre</option>
                     </select>
+                    <i class="fa-sharp fa-solid fa-caret-down"></i>
+            </div>
+
+            <div class="col-md-4 inp">
+                <label for="inpCelebrationMonth" class="form-label">Tipo:</label>
+                <select id="inpCelebrationMonth" name="inpCelebrationMonth" class="form-control" [(ngModel)]="RegistrarFecha.tipo">
+                    <option selected value="Fecha importante">Fecha importante</option>
+                    <option value="Cumpleaños">Cumpleaños</option>
+                </select>
+                <i class="fa-sharp fa-solid fa-caret-down"></i>
             </div>
         </div>
+
+        
 
         
 

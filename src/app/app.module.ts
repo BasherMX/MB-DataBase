@@ -51,8 +51,10 @@ export class Persona {
 
 export class FechaImportante {
   constructor(
+        public id: number,
         public celebracion: string,
         public dia: number,
-        public mes:number
+        public mes:string,
+        public tipo:string,
     ) { }
 }

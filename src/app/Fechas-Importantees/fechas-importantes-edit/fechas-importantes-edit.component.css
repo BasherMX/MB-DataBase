@@ -1,0 +1,24 @@
+.Titulo{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.row h4{
+    transform: translate(-10px);
+    color: #0c2a6c;
+}
+
+.btnRegistrar{
+    margin-right: 15px;
+}
+
+.inp{
+    position: relative;
+}
+
+.fa-caret-down{
+    position: absolute;
+    top: calc(50% + 8px);
+    right: 30px;
+    pointer-events: none;
+}

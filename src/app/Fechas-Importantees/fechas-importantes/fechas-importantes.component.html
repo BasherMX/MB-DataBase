@@ -23,20 +23,24 @@
         
         <thead class="table-light">
           <tr>
+            <th scope="col">Id</th>
             <th scope="col">Celebracion</th>
             <th scope="col">Dia</th>
             <th scope="col">Mes</th>
+            <th scope="col">Tipo</th>
             <th scope="col">Accion</th>
           </tr>
 
         </thead>
         <tbody>
           <tr *ngFor="let i of ArrayFechasImportantes">
+            <td>{{i.id}}</td>
             <td>{{i.celebracion}}</td>
             <td>{{i.dia}}</td>
             <td>{{i.mes}}</td>
+            <td>{{i.tipo}}</td>
             <td>
-              <i class="action_icons fa-solid fa-pencil"></i>
+              <i class="action_icons fa-solid fa-pencil" [routerLink]="['/fechasImportantes-edit/'+ i.celebracion]"></i>
               <i class="action_icons fa-solid fa-trash" (click)="fnDelete(i.celebracion)"></i>
             </td>
           </tr>
